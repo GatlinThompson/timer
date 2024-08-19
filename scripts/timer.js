@@ -26,8 +26,8 @@ const setStartTime = () => {
 const setEndTime = (date) => {
   let d = new Date(date.date.getTime()); // copy date
   //set end time
-  if (date.day < 5) d.setHours(20, 0, 0); // 20
-  else d.setHours(12, 0, 0);
+  if (date.day < 5) d.setHours(19, 55, 0); // 20
+  else d.setHours(10, 55, 0);
 
   //return time
   const time = {
