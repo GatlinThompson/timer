@@ -1,0 +1,57 @@
+section.container {
+  margin: 100px;
+  //perspective: 1000px;
+}
+
+// container
+.timer-block {
+  // Timer Block
+  //Top Part
+  div > &.top {
+    width: 100px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 100px;
+    background-color: rgb(69, 69, 114);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; // set to bottom
+    overflow: hidden;
+    z-index: 100;
+
+    position: relative;
+    bottom: 0;
+    &:hover {
+      transform: rotateX(180deg) translateY(-100%);
+    }
+
+    & > span {
+      transform: translateY(50%); // set to lower
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      font-size: 50px;
+      background-color: green;
+      color: rgb(88, 88, 88);
+
+      & > a {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  div > &.bottom {
+    @extend .top;
+    background-color: yellow;
+    align-items: flex-start;
+    z-index: 1;
+
+    & > span {
+      transform: translateY(-50%); // set to lower
+    }
+  }
+}

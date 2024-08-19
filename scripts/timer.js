@@ -1,3 +1,9 @@
+import { changeNumber } from "./number";
+
+const print = (e) => {
+  console.log(e);
+};
+
 const setStartTime = () => {
   const d = new Date();
   const day = d.getDay();
@@ -20,7 +26,7 @@ const setStartTime = () => {
 const setEndTime = (date) => {
   let d = new Date(date.date.getTime()); // copy date
   //set end time
-  if (date.day < 5) d.setHours(20, 0, 0); // 20
+  if (date.day < 5) d.setHours(23, 0, 0); // 20
   else d.setHours(12, 0, 0);
 
   //return time
@@ -45,7 +51,6 @@ const getTotalSeconds = (time) => {
 const timeLeft = (time) => {
   let hours = Math.floor(time / 3600);
   let minutes = Math.floor((time % 3600) / 60);
-  print(minutes);
   let seconds = time % 60;
   let displayMinutes = minutes < 10 ? `0${minutes}` : minutes;
   let displaySeconds = seconds < 10 ? `0${seconds}` : seconds;
@@ -137,9 +142,6 @@ export const timer = () => {
       singleSeconds:
         timer.time.seconds - Math.floor(timer.time.seconds / 10) * 10,
     };
-
-    //changeNumbers(timer.time.seconds);
-    //print(`${measureTime.tenthMinutes}${measureTime.singleMinutes}`);
 
     if (tenthHours != measureTime.tenthHours && measureTime.tenthHours > -1) {
       changeNumbers(measureTime.tenthHours, "#tenth_hours");
