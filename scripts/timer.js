@@ -134,7 +134,7 @@ export const timer = () => {
 
     const measureTime = {
       tenthHours: Math.floor(timer.time.hours / 10),
-      singleHours: 1,
+      singleHours: timer.time.hours - Math.floor(timer.time.hours / 10) * 10,
       tenthMinutes: Math.floor(timer.time.minutes / 10),
       singleMinutes:
         timer.time.minutes - Math.floor(timer.time.minutes / 10) * 10,
