@@ -1,0 +1,40 @@
+@use "custom" as *;
+
+.clock-outer {
+  padding: 12px 10px;
+  border-radius: 22px;
+  background-color: $brown;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.clock-inner {
+  background-color: $dark-gray;
+  padding: 19px;
+  border-radius: 13px;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 21px;
+}
+
+.colon-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  gap: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 100%;
+}
+
+.colon {
+  width: 33px;
+  height: 33px;
+  background-color: $number-white;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}

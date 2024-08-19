@@ -4,11 +4,210 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.scss" />
 
     <title>Setting Up Timer...</title>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="./scripts/main.js"></script>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="container">
+      <!---border-->
+      <section class="clock-outer">
+        <!--timer big section inner clock-->
+        <div class="clock-inner">
+          <!--tIMER-->
+          <div class="number-container" id="tenth_hours">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--tIMER-->
+          <div class="number-container" id="single_hours">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <div class="colon-container">
+            <div class="colon"></div>
+            <div class="colon"></div>
+          </div>
+          <!--tIMER-->
+          <div class="number-container" id="tenth_minutes">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--tIMER-->
+          <div class="number-container" id="single_minutes">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+          <div class="colon-container">
+            <div class="colon"></div>
+            <div class="colon"></div>
+          </div>
+          <!--tIMER-->
+          <div class="number-container" id="tenth_seconds">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+
+          <!--tIMER-->
+          <div class="number-container" id="single_seconds">
+            <!--moving section-->
+            <div class="number-top-section">
+              <div class="top-stayer flap overflow-hidden">
+                <div class="holder top">
+                  <p class="number top-num top_bg">0</p>
+                </div>
+              </div>
+              <div class="top-mover">
+                <div class="topper flap overflow-hidden mover_number">
+                  <div class="holder top overflow-hidden">
+                    <p class="number top-num top_mover">0</p>
+                  </div>
+                </div>
+                <div class="topper-back overflow-hidden flap">
+                  <div class="holder top">
+                    <p class="number reverse top-num top_back">0</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--stand still section-->
+            <div class="number-bottom-section flap btm_number overflow-hidden">
+              <div class="holder btm">
+                <p class="number btm-num btm_num">0</p>
+              </div>
+            </div>
+          </div>
+          <!--end-->
+        </div>
+      </section>
+    </main>
   </body>
 </html>
